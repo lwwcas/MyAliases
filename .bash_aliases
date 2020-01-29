@@ -112,7 +112,7 @@ alias docker:start='docker start $(docker ps -a -q);'
 # Logs commands
 #
 
-
+alias log='tail -f *.log'
 
 #'##::: ##::'######:::'####:'##::: ##:'##::::'##:
 # ###:: ##:'##... ##::. ##:: ###:: ##:. ##::'##::
