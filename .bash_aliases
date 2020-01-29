@@ -35,7 +35,12 @@ source ~/.holo/src/Ubuntu/core.cfg
 # Easy commands
 #
 
-alias h='cd ~;';
+alias h='cd ~;'
+
+alias ..='cd ../;'
+alias ...='cd ../../;'
+alias ....='cd ../../../;'
+alias .....='cd ../../../../;'
 
 
 #:::'###::::'########::'########:'####::'######:::::'###::::'##::: ##:
@@ -94,6 +99,7 @@ alias dd='ddown'
 alias docker:list='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.RunningFor}}\t{{.Status}}";'
 alias docker:ps='docker:list'
 alias dps='docker:list'
+
 alias docker:restart='docker restart $(docker ps --format "{{.Names}}");'
 alias docker:stop='docker stop $(docker ps --format "{{.Names}}");'
 alias docker:start='docker start $(docker ps -a -q);'
@@ -113,6 +119,7 @@ alias docker:start='docker start $(docker ps -a -q);'
 #
 
 alias log='tail -f *.log'
+
 
 #'##::: ##::'######:::'####:'##::: ##:'##::::'##:
 # ###:: ##:'##... ##::. ##:: ###:: ##:. ##::'##::
@@ -143,7 +150,9 @@ alias nginx:restart='docker exec nginx nginx -s reload;'
 # Private Commands
 #
 
-source ~/.bash_private_aliases
+if [ -f ~/.bash_private_aliases ]; then
+    source ~/.bash_private_aliases
+fi
 
 
 
