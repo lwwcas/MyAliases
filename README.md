@@ -19,4 +19,5 @@ Run this command on terminal
  5. Run the commando on your terminal
  
 > Note: The link above takes you to my private repository, so you will not have access, but you can fork and place the link to your file
+
 > Nit: If you do not install private aliases, you can delete the 'Private' section in the file .bash_aliases
