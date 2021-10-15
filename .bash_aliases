@@ -56,6 +56,10 @@ alias .....='cd ../../../../;'
 # Artisan commands
 #
 
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
+
 alias artisan='php artisan'
 alias art='artisan'
 alias migrate='artisan migrate;'
