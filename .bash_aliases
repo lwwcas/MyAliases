@@ -19,8 +19,9 @@ alias bashconfig='code ~/.bashrc'
 
 alias zshconfig="code ~/.zshrc"
 
-source ~/.holo/src/Ubuntu/core.cfg
-
+if [ -f ~/.holo/src/Ubuntu/core.cfg ]; then
+    source ~/.holo/src/Ubuntu/core.cfg
+fi
 
 #'########::::'###:::::'######::'##:::'##:
 # ##.....::::'## ##:::'##... ##:. ##:'##::
