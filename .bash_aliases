@@ -64,6 +64,9 @@ alias artisan='php artisan'
 alias art='artisan'
 alias migrate='artisan migrate;'
 
+# Launch a Tinker session
+alias tinker="php artisan tinker"
+
 
 #'########:'########::'######::'########::'######::
 #... ##..:: ##.....::'##... ##:... ##..::'##... ##:
